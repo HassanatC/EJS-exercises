@@ -1,0 +1,39 @@
+// Chapter 2 - Triangle exercise, print triangle with #
+
+
+  var num = 7;
+  for (j = 1; j <= num; j++)
+  var str = " ";
+  for (l = 1; l <= j; l++)  {
+  str = str + "# ";
+  console.log(str);
+  
+  }
+
+
+// Chapter 2 - FizzBuzz
+
+
+for (let i = 1; i < 100; i++)
+  if (i % 15 == 0) console.log("Fizzbuzz")
+else if (i % 5 == 0) console.log("Buzz")
+else if (i % 3 == 0) console.log("Fizz")
+else console.log(i);
+   
+   
+// Chapter 3 - Chessboard print-out
+
+var size = 16;
+
+var board = " ";
+
+for (var y = 0; y < size; y++) {
+  for (var x = 0; x < size; x++){
+    if ((x + y) % 2 == 0)
+      board += " ";
+  else board += '#';
+}
+ board += "\n";
+}
+
+console.log(board);
