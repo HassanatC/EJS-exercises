@@ -1,0 +1,49 @@
+// Chapter 3 - forming a minimum
+
+var min = function(x, y) {
+    return (x < y) ? x : y;
+};
+
+console.log(min(0, 40));
+
+// Chapter 3 - Recursion using boolean
+
+var isitEven = function(rec) {
+
+rec = Math.abs(rec);
+if (rec === 0) // strict equal bool
+  return true;
+else if (rec === 1) 
+  return false;
+else
+  return isitEven(rec - 2);
+}
+
+
+console.log(isitEven(50));
+
+console.log(isitEven(79));
+
+
+
+// Chapter 3 - nth Bean counting
+
+function counterChar(str, char)
+{
+  var counter = 0;
+  for (var co = 0; co < str.length; co++) 
+ {
+  if (str.charAt(co) === "K")  
+  { 
+    counter++;	
+  }
+    
+ }
+  return (counter);
+}
+  
+
+console.log(counterChar("KafKaKKF"));
+    
+console.log(counterChar("BBBBBFSF"));
+    
